@@ -221,7 +221,13 @@ public class TelaClienteThread extends javax.swing.JFrame {
 
     private void ButtonEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEnviarActionPerformed
     
-        saida.println(campoDigitar.getText());            // TODO add your handling code here:
+        saida.println(campoDigitar.getText());
+        /*String mensagem = campoDigitar.getText();
+        if (!mensagem.isEmpty()) {
+            saida.println(mensagem); // Envia a mensagem para o servidor
+            campoDigitar.append("Você: " + mensagem + "\n"); // Exibe a mensagem no chat
+            campoDigitar.setText(""); // Limpa o campo de entrada após enviar a mensagem
+        }*/
     }//GEN-LAST:event_ButtonEnviarActionPerformed
 
     /**
